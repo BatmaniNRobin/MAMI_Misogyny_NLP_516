@@ -1,0 +1,12 @@
+name: cloud
+dependencies:
+  - pip
+  - python
+  # - conda install -c conda-forge transformers # == 4.12.5
+  - tensorflow
+  - matplotlib
+  - scipy
+  - pandas
+  - scikit-learn
+  - nltk
+  - keras
