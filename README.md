@@ -7,13 +7,13 @@ The dataset consists of 10,000 memes and data consolidated on csv file provided 
 
 ## Model
 ### Preprocessing
-The following steps were completed for preprocssing the data: remove stop words using NLTK library, get rid of URLs added by free meme generators, get rid of punctuation
+The following steps were completed for preprocssing the data: remove stop words using NLTK library, get rid of URLs added by free meme generators, get rid of punctuation.
 ### DistilBERT 
 This model was used since in literature it was shown to reduces the size of a BERT model by 40%, while retaining 97% of its language understanding capabilities and being 60% faster. Once this was run on the text, then the inputted text was tokenized and generated contextual word embeddings.
 ### Postprocessing
 Since BERT output is not 0 or 1 passed into a decoder that can map to 0 or 1. The neural network passed through was the default in the DistillBERT model that uses a neural network setup called Masked language modeling (MLM), similar to recurrent neural networks and Generative Pre-trained Transformer. When taking a sentence, the model randomly masks 15% of the words in the input then run the entire masked sentence through the model and has to predict the masked words. Cosine embedding loss is used.
 ### Evaluation
-Evalution was completed by running epoches to determine the accuracy and validation scores, then forming a confusion matrix to look at the AUROC, precision, recall and F1 score
+Evalution was completed by running epoches to determine the accuracy and validation scores, then forming a confusion matrix to look at the AUROC, precision, recall and F1 score.
 
 ## Install
 
