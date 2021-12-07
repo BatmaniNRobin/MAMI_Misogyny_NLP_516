@@ -1,4 +1,4 @@
-name: cloud
+name: NLP_516
 dependencies:
   - pip
   - python
