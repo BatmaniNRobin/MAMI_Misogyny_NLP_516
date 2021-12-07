@@ -18,3 +18,7 @@ Evalution was completed by running epoches to determine the accuracy and validat
 ## Install
 
 ## Results
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
