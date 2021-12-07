@@ -28,7 +28,6 @@ Evalution was completed by running epoches to determine the accuracy and validat
 | AUROC | 86.15% |
 
 ### Confusion Matrix
+| **413** | **100** |
 | ----------- | ----------- |
-| 413 | 100 |
-| ----------- | ----------- |
-| 116 | 372 |
+| **116** | **372** |
