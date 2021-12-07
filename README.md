@@ -18,7 +18,11 @@ Evalution was completed by running epoches to determine the accuracy and validat
 ## Install
 
 ## Results
-| Syntax | Description |
+| Measure | Value |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Accuracy | 78.42% |
+| Precision | 78.81% |
+| Recall | 76.23% |
+| F1 | 77.50% |
+| Cohen’s kappa | 56.78% |
+| AUROC | 86.15% |
