@@ -27,7 +27,6 @@ Evalution was completed by running epoches to determine the accuracy and validat
 | Cohen’s kappa | 56.78% |
 | AUROC | 86.15% |
 
+
 ### Confusion Matrix
-| **413** | **100** |
-| ----------- | ----------- |
-| **116** | **372** |
+![image](https://user-images.githubusercontent.com/63976253/144958571-e76bca37-1462-4c3d-b589-5ae1cbe3e682.PNG)
