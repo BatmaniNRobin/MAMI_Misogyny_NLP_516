@@ -30,9 +30,13 @@ We chose to install conda, specifically in our case miniconda. from
    - an alert may pop up describing that a kernel needs to be installed and recommends ipykernel, hit yes and install.
       - if it does not pop up or it dies or exits while running and you are unable to continue running code, you may need to run it manually with:
       - `conda install ipykernel --update-deps --force-reinstall`
+      - change conda env within VSCode via top right section where it says python
 7. Also if VSCode starts messing up, sometimes it may just be best to just close the application and reopen it, or change conda environments and change back, or even re-running the previous command
 8. If you receive an error with tensorflow, or tokenizers not building successfully, you may need to run this command and rearrange the order of these two import statements, dont know why, dont ask but: 
    - `sudo vim /Users/user/miniforge3/envs/cloud/lib/python3.9/site-packages/tensorflow/python/__init__.py`
    - and make the imports be in this order:
    - `from tensorflow.python import pywrap_tensorflow as _pywrap_tensorflow`
    - `from tensorflow.python.eager import context`
+
+## Run
+1. Just hit `run all` when step 1-6 are complete and everything seems to be functional, if any errors occur steps 7-8 may offer some assistance however, these steps were tested on a macbook, and 2 windows machines and none had to go past step 6. Enjoy :)
