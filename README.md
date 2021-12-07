@@ -37,7 +37,7 @@ We chose to install conda, specifically in our case miniconda. from
 1. If Conda is not activated immediately, run:
    - `conda activate`
 2. Once activated, you should be in the Base conda environment, to install all of the packages and dependencies to properly run this notebook, run:
-   - `conda env create -f environment.yaml`
+   - `conda env create -f environment.yml`
 3. The previous command will have created a new environment with the proper packages and dependencies, in order to be within the proper environment you will need to run:
    - `conda activate NLP_516`
 4. One of the main packages, transformers, needs to be a certain version in order for this to run properly, however Conda's main channels did not have the version available to be downloaded, so you need to specify the channel for where to download it, in this case a very popular open-source community channel, conda-forge, is used and and installed by running:
