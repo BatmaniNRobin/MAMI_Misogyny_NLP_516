@@ -26,3 +26,7 @@ Evalution was completed by running epoches to determine the accuracy and validat
 | F1 | 77.50% |
 | Cohen’s kappa | 56.78% |
 | AUROC | 86.15% |
+
+### Confusion Matrix
+| Measure | Value |
+| ----------- | ----------- |
