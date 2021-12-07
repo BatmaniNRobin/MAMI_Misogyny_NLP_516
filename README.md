@@ -26,8 +26,9 @@ We chose to install conda, specifically in our case miniconda. from
 
 1. Miniconda installers specifically for Linux, we chose python 3.9:
    - https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
-2. in terminal window, run:
+2. if installing from source, in terminal window, run:
    - `bash Miniconda3-latest-Linux-x86_64.sh`
+   otherwise begin and run the installer and ensure that the `add to path` checkbox is checked, also the method for Windows machines.
 3. Follow the prompts to install to local machine, if unsure of any settings, just accept the defaults.
 4. Ensure conda install is added in your path variable:
    - `echo $PATH` to check
