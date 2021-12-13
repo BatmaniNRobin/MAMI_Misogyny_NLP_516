@@ -24,19 +24,16 @@ We chose to install conda, specifically in our case miniconda. from
 4. One of the main packages, transformers, needs to be a certain version in order for this to run properly, however Conda's main channels did not have the version available to be downloaded, so you need to specify the channel for where to download it, in this case a very popular open-source community channel, conda-forge, is used and and installed by running:
    - `conda install -c conda-forge transformers==4.12.5`
 5. Ensure you have a kernel installed locally that is able to run Jupyter Notebooks, if not, below will be described how to setup VScode to run the notebook
-6. (Optional)
+## Install VSCode
+1. (Optional)
    - Install VSCode `apt install vscode`, install Firefox Theme, enable the theme
    - Install Jupyter Notebook Extension, and Pylance Extension
    - an alert may pop up describing that a kernel needs to be installed and recommends ipykernel, hit yes and install.
       - if it does not pop up or it dies or exits while running and you are unable to continue running code, you may need to run it manually with:
       - `conda install ipykernel --update-deps --force-reinstall`
-      - change conda env within VSCode via top right section where it says python
-7. Also if VSCode starts messing up, sometimes it may just be best to just close the application and reopen it, or change conda environments and change back, or even re-running the previous command
-8. If you receive an error with tensorflow, or tokenizers not building successfully, you may need to run this command and rearrange the order of these two import statements, dont know why, dont ask but: 
+2. Also if VSCode starts messing up, sometimes it may just be best to just close the application and reopen it, or change conda environments and change back, or even re-running the previous command
+3. If you receive an error with tensorflow, or tokenizers not building successfully, you may need to run this command and rearrange the order of these two import statements, dont know why, dont ask but: 
    - `sudo vim /Users/user/miniforge3/envs/cloud/lib/python3.9/site-packages/tensorflow/python/__init__.py`
    - and make the imports be in this order:
    - `from tensorflow.python import pywrap_tensorflow as _pywrap_tensorflow`
    - `from tensorflow.python.eager import context`
-
-## Run
-1. Just hit `run all` when step 1-6 are complete and everything seems to be functional, if any errors occur steps 7-8 may offer some assistance however, these steps were tested on a macbook, and 2 windows machines and none had to go past step 6. Enjoy :)
